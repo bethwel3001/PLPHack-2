@@ -42,11 +42,13 @@ const Home = () => {
               </Link>
             ) : (
               <>
-                <Link to="/signup">
-                  <Button variant="primary" size="lg">
-                    Get Started Free
-                  </Button>
-                </Link>
+
+
+            <Link to="/ai-companion">
+              <Button variant="primary" size="lg">
+                Try AI Companion Now
+              </Button>
+            </Link>
                 <Link to="/login">
                   <Button variant="outline" size="lg">
                     Login
