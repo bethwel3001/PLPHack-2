@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Homework from './pages/Homework';
 import Pricing from './pages/Pricing';
+import AICompanion from './pages/AICompanion';
 import Navbar from './components/common/Navbar';
 import { Toaster } from 'react-hot-toast';
 
@@ -51,6 +52,15 @@ function App() {
                 exit={{ opacity: 0 }}
               >
                 <Pricing />
+              </motion.div>
+            } />
+            <Route path="/ai-companion" element={
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <AICompanion />
               </motion.div>
             } />
           </Routes>
