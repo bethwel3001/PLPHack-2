@@ -1,11 +1,23 @@
-# 📚 StudyBot
-- MVP VERSION:
+# StudyBot
 StudyBot is a mobile-first, AI-powered study assistant designed for university and high school students — and a homework helper for busy parents or working learners. Built with the MERN stack, it offers a sleek and scalable interface with modern animations, graphs, dark/light mode, and a clear CTA-driven experience.
 
 ---
+Live link.
+👉 [**Live Site on Netlify**](https://studybotmvp.netlify.app/)
+👉 [**Live Site on Render**](https://studybot-2.onrender.com)
+---
+### 📸 Screenshots
+
+#### 🏠 Home Page
+![Home](screenshots/home.png)
+
+#### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+#### 🤖 AI Chat Assistant
+![Homework](screenshots/image.png)
 
 ## 🚀 Features
-
 - 🎓 AI Homework Assistant (Coming soon)
 - 🧠 Student Performance Dashboard (with graphs)
 - 🎉 Confetti-based celebrations
@@ -72,3 +84,11 @@ npm start
 
 - Task reminders and streaks
 
+
+### 🙌 Built With ❤️ By Be Tu
+
+- [Bethwel Kiplagat](https://github.com/bethwel3001)
+
+### 📄 License
+
+This project is licensed under the MIT License.
