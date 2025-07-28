@@ -5,18 +5,15 @@ import {
   XMarkIcon,
   SunIcon,
   MoonIcon,
-  HomeIcon,
   SparklesIcon,
-  BookOpenIcon,
-  CurrencyDollarIcon,
 } from '@heroicons/react/24/outline';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
-  { name: 'Home', path: '/', icon: <HomeIcon className="h-5 w-5" /> },
-  { name: 'AI Companion', path: '/ai-companion', icon: <SparklesIcon className="h-5 w-5" /> },
-  { name: 'Homework', path: '/homework', icon: <BookOpenIcon className="h-5 w-5" /> },
-  { name: 'Pricing', path: '/pricing', icon: <CurrencyDollarIcon className="h-5 w-5" /> },
+  { name: 'Home', path: '/'},
+  { name: 'AI Companion', path: '/ai-companion'},
+  { name: 'Homework', path: '/homework'},
+  { name: 'Pricing', path: '/pricing'},
 ];
 
 const Navbar = () => {
