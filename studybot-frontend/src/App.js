@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './components/auth/Login';
+import Signup from './components/auth/Signup';
 import Dashboard from './pages/Dashboard';
 import Homework from './pages/Homework';
 import Pricing from './pages/Pricing';
@@ -64,6 +65,7 @@ function App() {
               </motion.div>
             } />
             <Route path="/login" element={<Login />} />
+            <Route path="/Signup" element={<Signup />} />
           </Routes>
         </AnimatePresence>
       </main>
