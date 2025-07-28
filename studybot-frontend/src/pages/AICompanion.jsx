@@ -13,9 +13,9 @@ import {
   ChatBubbleLeftRightIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
-
+// API base URL from backend
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000',
+  baseURL: process.env.REACT_APP_API_BASE_URL || 'https://studybot-2.onrender.com',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ const AICompanion = () => {
     
     setConversation(prev => [...prev, userMessage]);
 
-    // ✅ Fix: Explicitly include subject and question
+    //  Explicitly include subject and question
     const res = await api.post('/api/ask', {
       question,
       subject: activeSubject || 'general'
