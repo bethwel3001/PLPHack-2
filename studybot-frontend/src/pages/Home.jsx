@@ -11,7 +11,6 @@ import {
   ChatBubbleLeftRightIcon,
   ArrowRightIcon
 } from '@heroicons/react/24/outline';
-import { FaHandshake, FaHeart } from "react-icons/fa";
 const Home = () => {
   const { user } = useAuth();
 
@@ -22,24 +21,11 @@ const Home = () => {
     { name: "Google Edu", logo: "🔍" },
   ];
 
-  const testimonials = [
-  {
-    quote: "StudyBot made revision feel like a game. I genuinely look forward to using it every day!",
-    author: "Liam K.",
-    avatar: "L"
-  },
-  {
-    quote: "I went from failing grades to top of my class in 3 weeks. This app works wonders.",
-    author: "Fatima A.",
-    avatar: "F"
-  }
-];
-
   const stats = [
-    { value: "92%", label: "Student Satisfaction" },
-    { value: "4.8/5", label: "Average Rating" },
-    { value: "10K+", label: "Active Users" },
-    { value: "50+", label: "Subjects Covered" }
+    { value: "12%", label: "Student Satisfaction" },
+    { value: "2.8/5", label: "Average Rating" },
+    { value: "10+", label: "Active Users" },
+    { value: "5+", label: "Subjects Covered" }
   ];
 
   return (
@@ -145,8 +131,7 @@ const Home = () => {
                   </Link>
                 </>
               )}
-            </motion.div>
-            
+            </motion.div>            
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -154,7 +139,7 @@ const Home = () => {
               className="mt-16"
             >
               <div className="relative w-full max-w-4xl mx-auto h-64 md:h-96 bg-gradient-to-br from-indigo-500 to-emerald-400 rounded-3xl shadow-2xl overflow-hidden">
-                <motion.div
+            <motion.div
                   animate={{
                     x: [0, 20, 0],
                     y: [0, -10, 0],
@@ -167,7 +152,7 @@ const Home = () => {
                   className="absolute inset-0 opacity-10 bg-grid-pattern"
                 />
                 <div className="absolute inset-0 flex items-center justify-center p-6">
-                  <motion.div
+            <motion.div
                     whileHover={{ scale: 1.02 }}
                     className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg max-w-md w-full"
                   >
@@ -182,14 +167,13 @@ const Home = () => {
                     <Button variant="primary" size="md" fullWidth>
                     Ask studybot Anything
                     </Button></Link>
-                  </motion.div>
+            </motion.div>
                 </div>
               </div>
             </motion.div>
           </motion.div>
         </div>
       </section>
-
       {/* Stats */}
       <section className="py-12 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6">
@@ -210,7 +194,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Features */}
       <section className="py-24 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6">
@@ -347,89 +330,6 @@ const Home = () => {
         </motion.div>
       ))}
     </motion.div>
-
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-16"
-    >
-      <Link to="/partners">
-        <Button variant="gradient" size="lg" icon={<FaHandshake className="mr-2" />}>
-          Become a Partner
-        </Button>
-      </Link>
-      <a href="/donate">
-        <Button variant="gradient" size="lg" icon={<FaHeart className="mr-2" />}>
-          Donate
-        </Button>
-      </a>
-    </motion.div>
-  </div>
-</section>
-
-      {/* Testimonials */}
-  <section className="py-20 bg-gradient-to-br from-gray-900 via-indigo-900 to-indigo-800 text-white">
-  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true, margin: "-100px" }}
-      className="text-center mb-16"
-    >
-      <motion.h2
-        initial={{ y: -20 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight"
-      >
-        What <span className="text-emerald-400">Students Say</span>
-      </motion.h2>
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto"
-      >
-        Real voices from learners transforming their study journey with StudyBot.
-      </motion.p>
-    </motion.div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-      {testimonials.slice(0, 2).map((testimonial, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ 
-            duration: 0.6, 
-            delay: index * 0.15,
-            type: "spring",
-            stiffness: 100
-          }}
-          viewport={{ once: true, margin: "-50px" }}
-          whileHover={{ scale: 1.02 }}
-          className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 shadow-xl backdrop-blur-md relative"
-        >
-          <div className="absolute -top-8 -left-8 w-24 h-24 bg-emerald-400 opacity-10 blur-2xl rounded-full pointer-events-none" />
-          <div className="relative z-10">
-            <p className="text-xl md:text-2xl italic font-light leading-relaxed text-indigo-100 mb-6">
-              “{testimonial.quote}”
-            </p>
-            <div className="flex items-center">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white font-bold text-lg mr-4 shadow-md">
-                {testimonial.avatar}
-              </div>
-              <p className="text-emerald-300 font-semibold text-base">
-                {testimonial.author}
-              </p>
-            </div>
-          </div>
-        </motion.div>
-      ))}
-    </div>
   </div>
 </section>
       <section className="py-24 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
@@ -459,7 +359,6 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400">
         <div className="container mx-auto px-6 py-16">
