@@ -14,12 +14,11 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline';
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL,
+  baseURL: 'https://study-bot-vc9r.onrender.com', 
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
-    'Accept': 'application/json',
-    'Cache-Control': 'no-cache'
+    'Accept': 'application/json'
   }
 });
 const AICompanion = () => {
