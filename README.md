@@ -3,11 +3,10 @@ StudyBot is a mobile-first, AI-powered study assistant designed for university a
 
 ---
 Live links👉.
-[**Live Site on Netlify**](https://studybotmvp.netlify.app/)
-[**Live Site on Render**](https://studybot-2.onrender.com)
+- [**Live Site on Netlify**](https://sunny-basbousa-6ebe72.netlify.app/)
+- [**Live Site on Render**](https://study-bot-vc9r.onrender.com)
 ---
 ### 📸 Screenshots
-
 #### 🏠 Home Page
 ![Home](screenshots/home.png)
 
@@ -15,17 +14,13 @@ Live links👉.
 ![Dashboard](screenshots/dashboard.png)
 
 #### 🤖 AI Chat Assistant
-![Homework](screenshots/image.png)
+![Chat](screenshots/image.png)
 
 ## 🚀 Features
 - 🎓 AI Homework Assistant (Coming soon)
-- 🧠 Student Performance Dashboard (with graphs)
-- 🎉 Confetti-based celebrations
-- 🎨 Light/Dark Mode toggle
+- 🧠 Student Performance Dashboard.
 - 📱 Mobile-first responsive design
-- 💡 Reminder/CTA system
 - 🔐 Authentication-ready
-- ⚛️ React + Tailwind CSS + Framer Motion
 - 📊 Chart.js for progress tracking
 
 ---
@@ -44,7 +39,6 @@ Live links👉.
 ---
 
 ## ⚙️ Setup Instructions
-
 ### 1. Clone the repo
 
 ```bash
