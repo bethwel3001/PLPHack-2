@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 const allowedOrigins = [
-  'https://sunny-basbousa-6ebe72.netlify.app',
+  'https://sensational-eclair-25e9f4.netlify.app',
   'http://localhost:3000'
 ];
 
