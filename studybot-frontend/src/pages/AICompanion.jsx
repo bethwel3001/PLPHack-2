@@ -13,21 +13,13 @@ import {
   ChatBubbleLeftRightIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
-// API base URL from backend
-// const api = axios.create({
-//   baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000',
-//   withCredentials: true,
-//   headers: {
-//     'Content-Type': 'application/json',
-//     'Accept': 'application/json'
-//   }
-// });
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL, 
+  baseURL: process.env.REACT_APP_API_BASE_URL,
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
-    'Accept': 'application/json'
+    'Accept': 'application/json',
+    'Cache-Control': 'no-cache'
   }
 });
 const AICompanion = () => {
