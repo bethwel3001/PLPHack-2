@@ -3,7 +3,7 @@ StudyBot is a mobile-first, AI-powered study assistant designed for university a
 
 ---
 Live links👉.
-- [**Live Site on Netlify**](https://sunny-basbousa-6ebe72.netlify.app/)
+- [**Live Site on Netlify**](https://sensational-eclair-25e9f4.netlify.app/)
 - [**Live Site on Render**](https://study-bot-vc9r.onrender.com)
 ---
 ### 📸 Screenshots
@@ -86,3 +86,72 @@ npm start
 ### 📄 License
 
 This project is licensed under the MIT License.
+# 🤝 Contribution Guide
+
+Thank you for considering contributing to StudyBot! We welcome all forms of contributions from the community.
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm 9+
+- Git
+
+### Setup
+1. Fork the repository
+2. Clone your fork:
+   ```bash
+   git clone https://github.com/your-username/studybot.git
+   cd studybot
+   ```
+3. Instal dependenciies
+   ```
+   npm install
+   ```
+4. Create a .env file based on .env.example
+
+### Development Workflow
+- Branch Naming
+Use this format: [type]/[short-description]
+Example: feat/add-dark-mode
+
+- Commit Messages
+Follow Conventional Commits:
+
+text
+<type>(<scope>): <description>
+Types:
+feat: New features
+fix: Bug fixes
+docs: Documentation changes
+style: Code style/formatting
+refactor: Code changes that neither fixes a bug nor adds a feature
+test: Adding missing tests
+chore: Maintenance tasks
+
+### Reporting Issues
+When opening an issue, please include:
+
+Clear description of the problem
+Steps to reproduce
+Expected vs actual behavior
+Screenshots if applicable
+Device/browser information
+
+### Pull Requests
+Keep PRs focused on a single feature/fix
+Reference related issues
+Include relevant tests
+Update documentation if needed
+Ensure all tests pass
+
+### Versioning
+We follow Semantic Versioning (SemVer)
+
+💬 Code of Conduct
+Please note we have a Code of Conduct. Please follow it in all your interactions with the project.
+
+### Acknowledgments
+Thank you to all our contributors
+
+Special thanks to OpenRouter for their API support
